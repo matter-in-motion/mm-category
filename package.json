@@ -1,0 +1,38 @@
+{
+  "name": "mm-category",
+  "version": "1.0.0",
+  "description": "Category resource extension for Matter In Motion",
+  "keywords": [
+    "matter",
+    "in",
+    "motion",
+    "mm",
+    "extension",
+    "resource",
+    "category",
+    "tree"
+  ],
+  "author": "Alexey Novikov <v@2dubs.com> (http://2dubs.com)",
+  "license": "MIT",
+  "dependencies": {
+    "mm-errors": "^2.0.0",
+    "slugify": "^1.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:matter-in-motion/mm-category.git"
+  },
+  "main": "./index",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "mm-db-schema": "^1.0.0",
+    "mm-rethinkdb": "^1.0.0",
+    "mm-rethinkdb-schema": "^1.0.0",
+    "mm-rethinkdb-unique": "^2.0.0",
+    "mm-test": "^3.0.0",
+    "nyc": "^12.0.0"
+  },
+  "scripts": {
+    "test": "nyc ava"
+  }
+}
