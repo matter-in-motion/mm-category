@@ -44,7 +44,7 @@ or
 
 or
 
-* empty, returns all first level categories with all subcategories
+* empty — returns all first level categories with all subcategories
 
 **Response**
 
