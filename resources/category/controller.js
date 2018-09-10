@@ -83,7 +83,7 @@ Controller.prototype.mergeSubCategories = function() {
   }
 };
 
-Controller.prototype.create = function(category) {
+Controller.prototype.create = function(category, index) {
   category.slug = slugify(category.slug || category.title, { lower: true });
   return this.unique.ensure(this.slugs, category.slug)
     .then(() => this.r.table(this.table)

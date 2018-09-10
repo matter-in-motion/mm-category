@@ -5,9 +5,9 @@ const types = require('../types');
 const ReqlDriverError = function(e) {
   if (e.name === 'ReqlDriverError') {
     throw errors.ServerError(null, e.msg);
-  } else {
-    throw e;
   }
+
+  throw e;
 }
 
 module.exports = {
@@ -150,6 +150,7 @@ module.exports = {
 
       call: (auth, data) => this.delete(data.id)
         .catch(ReqlDriverError)
+        .catch(errors.ifError('BadRequest'))
     }
   }
 };

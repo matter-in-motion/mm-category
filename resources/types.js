@@ -2,7 +2,7 @@
 
 const slug = low => ({
   type: 'string',
-  pattern: '^[-a-z0-9_]{' + (low || 1) + ',60}$'
+  pattern: '^[-a-z0-9_/]{' + (low || 1) + ',60}$'
 });
 
 const title = () => ({
